@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barcode Test</title>
+    <script type="text/javascript" src="/barcodeJS/lib.js"></script>
+    <script type="text/javascript">
+        function exampleInit() {
+            barcode({
+                renderToID : 'barcode',
+                string : '40-HC1-0-45782',
+                barWidth : 2,
+                height : '100',
+                showText : true
+            });
+        }
+        window.addEventListener('load', exampleInit, false);
+    </script>
+</head>
+<body>
+    <p>Barcode for: "40-HC1-0-45782":</p>
+    <div id="barcode" style="padding: 10px; border: solid #000 1px;"></div>
+</body>
+</html>
